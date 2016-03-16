@@ -1,0 +1,647 @@
+Sub jelolt4()
+'
+' jelolt4 Makró
+'
+
+'
+Sheets("1").Select
+Sheets("1").Copy After:=Sheets(25)
+Sheets("1 (2)").Select
+Sheets("1 (2)").Name = "26"
+Range("A2").Select
+ActiveCell.FormulaR1C1 = "=IF(('1'!RC+'2'!RC+'3'!RC+'4'!RC+'5'!RC)>=3,1,0)"
+Range("A2").Select
+Selection.Copy
+Range("A2:D1001").Select
+ActiveSheet.Paste
+Application.CutCopyMode = False
+Range("CE5:CE14").Select
+ActiveCell.FormulaR1C1 = "AVG"
+
+Sheets("6").Select
+Sheets("6").Copy After:=Sheets(26)
+Sheets("6 (2)").Select
+Sheets("6 (2)").Name = "27"
+Range("A2").Select
+ActiveCell.FormulaR1C1 = "=IF(('6'!RC+'7'!RC+'8'!RC+'9'!RC+'10'!RC)>=3,1,0)"
+Range("A2").Select
+Selection.Copy
+Range("A2:D1001").Select
+ActiveSheet.Paste
+Application.CutCopyMode = False
+Range("CE5:CE14").Select
+ActiveCell.FormulaR1C1 = "AVG"
+
+Sheets("11").Select
+Sheets("11").Copy After:=Sheets(27)
+Sheets("11 (2)").Select
+Sheets("11 (2)").Name = "28"
+Range("A2").Select
+ActiveCell.FormulaR1C1 = "=IF(('11'!RC+'12'!RC+'13'!RC+'14'!RC+'15'!RC)>=3,1,0)"
+Range("A2").Select
+Selection.Copy
+Range("A2:D1001").Select
+ActiveSheet.Paste
+Application.CutCopyMode = False
+Range("CE5:CE14").Select
+ActiveCell.FormulaR1C1 = "AVG"
+
+Sheets("16").Select
+Sheets("16").Copy After:=Sheets(28)
+Sheets("16 (2)").Select
+Sheets("16 (2)").Name = "29"
+Range("A2").Select
+ActiveCell.FormulaR1C1 = "=IF(('16'!RC+'17'!RC+'18'!RC+'19'!RC+'20'!RC)>=3,1,0)"
+Range("A2").Select
+Selection.Copy
+Range("A2:D1001").Select
+ActiveSheet.Paste
+Application.CutCopyMode = False
+Range("CE5:CE14").Select
+ActiveCell.FormulaR1C1 = "AVG"
+
+Sheets("21").Select
+Sheets("21").Copy After:=Sheets(29)
+Sheets("21 (2)").Select
+Sheets("21 (2)").Name = "30"
+Range("A2").Select
+ActiveCell.FormulaR1C1 = "=IF(('21'!RC+'22'!RC+'23'!RC+'24'!RC+'25'!RC)>=3,1,0)"
+Range("A2").Select
+Selection.Copy
+Range("A2:D1001").Select
+ActiveSheet.Paste
+Application.CutCopyMode = False
+Range("CE5:CE14").Select
+ActiveCell.FormulaR1C1 = "AVG"
+
+Sheets("30").Select
+Sheets("30").Copy After:=Sheets(30)
+Sheets("30 (2)").Select
+Sheets("30 (2)").Name = "31"
+Range("CH5").Select
+ActiveCell.FormulaR1C1 = "=AVERAGE('26'!RC,'27'!RC,'28'!RC,'29'!RC,'30'!RC)"
+Range("CH5").Select
+Selection.Copy
+Range("CH5:CW14").Select
+ActiveSheet.Paste
+Range("CZ5:DA14").Select
+ActiveSheet.Paste
+Range("DD4:DD7").Select
+ActiveSheet.Paste
+Application.CutCopyMode = False
+Range("CE5:CE14").Select
+ActiveCell.FormulaR1C1 = "AVG"
+
+Sheets("30").Select
+Range("CD3:DD14").Select
+Selection.Copy
+Sheets("31").Select
+Range("CD3").Select
+Selection.PasteSpecial Paste:=xlPasteFormats, Operation:=xlNone, _
+SkipBlanks:=False, Transpose:=False
+
+Sheets("31").Select
+Range("CK21").Select
+Selection.Copy
+Range("A1:BZ1001").Select
+ActiveSheet.Paste
+Application.CutCopyMode = False
+Range("CE5:CE14").Select
+ActiveCell.FormulaR1C1 = "AVG"
+Range("CD5:CD14").Select
+ActiveCell.FormulaR1C1 = "TOTAL"
+
+Sheets("31").Select
+Sheets("31").Copy After:=Sheets(31)
+Sheets("31 (2)").Select
+Sheets("31 (2)").Name = "Summary"
+Range("CK18").Select
+Selection.Copy
+Range("A1:DF1000").Select
+ActiveSheet.Paste
+Application.CutCopyMode = False
+   
+For k = 1 To 31
+
+Sheets(k).Select
+Range("CD3:DD14").Select
+Selection.Copy
+
+Sheets("Summary").Select
+Cells(2 + (k - 1) * 14, 2).Select
+Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
+:=False, Transpose:=False
+Selection.PasteSpecial Paste:=xlPasteFormats, Operation:=xlNone, _
+SkipBlanks:=False, Transpose:=False
+
+
+Next k
+
+Sheets("1").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("2").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("3").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("4").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("5").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("6").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("7").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("8").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("9").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("10").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("11").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("12").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("13").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("14").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("15").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("16").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("17").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("18").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("19").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("20").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("21").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("22").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("23").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("24").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("25").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("26").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("27").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("28").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("29").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("30").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("31").Select
+ActiveWindow.SelectedSheets.Delete
+
+
+End Sub
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sub jelolt5()
+'
+' jelolt5 Makró
+'
+
+'
+Sheets("1").Select
+Sheets("1").Copy After:=Sheets(25)
+Sheets("1 (2)").Select
+Sheets("1 (2)").Name = "26"
+Range("A2").Select
+ActiveCell.FormulaR1C1 = "=IF(('1'!RC+'2'!RC+'3'!RC+'4'!RC+'5'!RC)>=3,1,0)"
+Range("A2").Select
+Selection.Copy
+Range("A2:E1001").Select
+ActiveSheet.Paste
+Application.CutCopyMode = False
+Range("CY5:CY14").Select
+ActiveCell.FormulaR1C1 = "AVG"
+
+Sheets("6").Select
+Sheets("6").Copy After:=Sheets(26)
+Sheets("6 (2)").Select
+Sheets("6 (2)").Name = "27"
+Range("A2").Select
+ActiveCell.FormulaR1C1 = "=IF(('6'!RC+'7'!RC+'8'!RC+'9'!RC+'10'!RC)>=3,1,0)"
+Range("A2").Select
+Selection.Copy
+Range("A2:E1001").Select
+ActiveSheet.Paste
+Application.CutCopyMode = False
+Range("CY5:CY14").Select
+ActiveCell.FormulaR1C1 = "AVG"
+
+Sheets("11").Select
+Sheets("11").Copy After:=Sheets(27)
+Sheets("11 (2)").Select
+Sheets("11 (2)").Name = "28"
+Range("A2").Select
+ActiveCell.FormulaR1C1 = "=IF(('11'!RC+'12'!RC+'13'!RC+'14'!RC+'15'!RC)>=3,1,0)"
+Range("A2").Select
+Selection.Copy
+Range("A2:E1001").Select
+ActiveSheet.Paste
+Application.CutCopyMode = False
+Range("CY5:CY14").Select
+ActiveCell.FormulaR1C1 = "AVG"
+
+Sheets("16").Select
+Sheets("16").Copy After:=Sheets(28)
+Sheets("16 (2)").Select
+Sheets("16 (2)").Name = "29"
+Range("A2").Select
+ActiveCell.FormulaR1C1 = "=IF(('16'!RC+'17'!RC+'18'!RC+'19'!RC+'20'!RC)>=3,1,0)"
+Range("A2").Select
+Selection.Copy
+Range("A2:E1001").Select
+ActiveSheet.Paste
+Application.CutCopyMode = False
+Range("CY5:CY14").Select
+ActiveCell.FormulaR1C1 = "AVG"
+
+Sheets("21").Select
+Sheets("21").Copy After:=Sheets(29)
+Sheets("21 (2)").Select
+Sheets("21 (2)").Name = "30"
+Range("A2").Select
+ActiveCell.FormulaR1C1 = "=IF(('21'!RC+'22'!RC+'23'!RC+'24'!RC+'25'!RC)>=3,1,0)"
+Range("A2").Select
+Selection.Copy
+Range("A2:E1001").Select
+ActiveSheet.Paste
+Application.CutCopyMode = False
+Range("CY5:CY14").Select
+ActiveCell.FormulaR1C1 = "AVG"
+
+Sheets("30").Select
+Sheets("30").Copy After:=Sheets(30)
+Sheets("30 (2)").Select
+Sheets("30 (2)").Name = "31"
+Range("DB5").Select
+ActiveCell.FormulaR1C1 = "=AVERAGE('26'!RC,'27'!RC,'28'!RC,'29'!RC,'30'!RC)"
+Range("DB5").Select
+Selection.Copy
+Range("DB5:DS15").Select
+ActiveSheet.Paste
+Range("DV5:DW15").Select
+ActiveSheet.Paste
+Range("DZ4:DZ7").Select
+ActiveSheet.Paste
+Application.CutCopyMode = False
+Range("CY5:CY15").Select
+ActiveCell.FormulaR1C1 = "AVG"
+
+Sheets("30").Select
+Range("CX3:DZ15").Select
+Selection.Copy
+Sheets("31").Select
+Range("CX3").Select
+Selection.PasteSpecial Paste:=xlPasteFormats, Operation:=xlNone, _
+SkipBlanks:=False, Transpose:=False
+
+Sheets("31").Select
+Range("CZ21").Select
+Selection.Copy
+Range("A1:CT1001").Select
+ActiveSheet.Paste
+Application.CutCopyMode = False
+Range("CY5:CY15").Select
+ActiveCell.FormulaR1C1 = "AVG"
+Range("CX5:CX15").Select
+ActiveCell.FormulaR1C1 = "TOTAL"
+
+Sheets("31").Select
+Sheets("31").Copy After:=Sheets(31)
+Sheets("31 (2)").Select
+Sheets("31 (2)").Name = "Summary"
+Range("CZ21").Select
+Selection.Copy
+Range("A1:CT1001").Select
+ActiveSheet.Paste
+Application.CutCopyMode = False
+   
+For k = 1 To 31
+
+Sheets(k).Select
+Range("CX3:DZ15").Select
+Selection.Copy
+
+Sheets("Summary").Select
+Cells(2 + (k - 1) * 15, 2).Select
+Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
+:=False, Transpose:=False
+Selection.PasteSpecial Paste:=xlPasteFormats, Operation:=xlNone, _
+SkipBlanks:=False, Transpose:=False
+
+
+Next k
+
+Sheets("1").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("2").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("3").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("4").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("5").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("6").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("7").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("8").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("9").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("10").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("11").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("12").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("13").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("14").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("15").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("16").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("17").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("18").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("19").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("20").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("21").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("22").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("23").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("24").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("25").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("26").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("27").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("28").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("29").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("30").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("31").Select
+ActiveWindow.SelectedSheets.Delete
+
+
+
+End Sub
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sub jelolt3()
+'
+' jelolt3 Makró
+'
+
+'
+Sheets("1").Select
+Sheets("1").Copy After:=Sheets(25)
+Sheets("1 (2)").Select
+Sheets("1 (2)").Name = "26"
+Range("A2").Select
+ActiveCell.FormulaR1C1 = "=IF(('1'!RC+'2'!RC+'3'!RC+'4'!RC+'5'!RC)>=3,1,0)"
+Range("A2").Select
+Selection.Copy
+Range("A2:C1001").Select
+ActiveSheet.Paste
+Application.CutCopyMode = False
+Range("BM5:BM13").Select
+ActiveCell.FormulaR1C1 = "AVG"
+
+Sheets("6").Select
+Sheets("6").Copy After:=Sheets(26)
+Sheets("6 (2)").Select
+Sheets("6 (2)").Name = "27"
+Range("A2").Select
+ActiveCell.FormulaR1C1 = "=IF(('6'!RC+'7'!RC+'8'!RC+'9'!RC+'10'!RC)>=3,1,0)"
+Range("A2").Select
+Selection.Copy
+Range("A2:C1001").Select
+ActiveSheet.Paste
+Application.CutCopyMode = False
+Range("BM5:BM13").Select
+ActiveCell.FormulaR1C1 = "AVG"
+
+Sheets("11").Select
+Sheets("11").Copy After:=Sheets(27)
+Sheets("11 (2)").Select
+Sheets("11 (2)").Name = "28"
+Range("A2").Select
+ActiveCell.FormulaR1C1 = "=IF(('11'!RC+'12'!RC+'13'!RC+'14'!RC+'15'!RC)>=3,1,0)"
+Range("A2").Select
+Selection.Copy
+Range("A2:C1001").Select
+ActiveSheet.Paste
+Application.CutCopyMode = False
+Range("BM5:BM13").Select
+ActiveCell.FormulaR1C1 = "AVG"
+
+Sheets("16").Select
+Sheets("16").Copy After:=Sheets(28)
+Sheets("16 (2)").Select
+Sheets("16 (2)").Name = "29"
+Range("A2").Select
+ActiveCell.FormulaR1C1 = "=IF(('16'!RC+'17'!RC+'18'!RC+'19'!RC+'20'!RC)>=3,1,0)"
+Range("A2").Select
+Selection.Copy
+Range("A2:C1001").Select
+ActiveSheet.Paste
+Application.CutCopyMode = False
+Range("BM5:BM13").Select
+ActiveCell.FormulaR1C1 = "AVG"
+
+Sheets("21").Select
+Sheets("21").Copy After:=Sheets(29)
+Sheets("21 (2)").Select
+Sheets("21 (2)").Name = "30"
+Range("A2").Select
+ActiveCell.FormulaR1C1 = "=IF(('21'!RC+'22'!RC+'23'!RC+'24'!RC+'25'!RC)>=3,1,0)"
+Range("A2").Select
+Selection.Copy
+Range("A2:C1001").Select
+ActiveSheet.Paste
+Application.CutCopyMode = False
+Range("BM5:BM13").Select
+ActiveCell.FormulaR1C1 = "AVG"
+
+Sheets("30").Select
+Sheets("30").Copy After:=Sheets(30)
+Sheets("30 (2)").Select
+Sheets("30 (2)").Name = "31"
+Range("BP5").Select
+ActiveCell.FormulaR1C1 = "=AVERAGE('26'!RC,'27'!RC,'28'!RC,'29'!RC,'30'!RC)"
+Range("BP5").Select
+Selection.Copy
+Range("BP5:CC13").Select
+ActiveSheet.Paste
+Range("CF5:CG13").Select
+ActiveSheet.Paste
+Range("CJ4:CJ7").Select
+ActiveSheet.Paste
+Application.CutCopyMode = False
+Range("BM5:BM13").Select
+ActiveCell.FormulaR1C1 = "AVG"
+
+Sheets("30").Select
+Range("BL3:CJ13").Select
+Selection.Copy
+Sheets("31").Select
+Range("BL3").Select
+Selection.PasteSpecial Paste:=xlPasteFormats, Operation:=xlNone, _
+SkipBlanks:=False, Transpose:=False
+
+Sheets("31").Select
+Range("CK21").Select
+Selection.Copy
+Range("A1:BH1001").Select
+ActiveSheet.Paste
+Application.CutCopyMode = False
+Range("BM5:BM13").Select
+ActiveCell.FormulaR1C1 = "AVG"
+Range("BL5:BL13").Select
+ActiveCell.FormulaR1C1 = "TOTAL"
+
+Sheets("31").Select
+Sheets("31").Copy After:=Sheets(31)
+Sheets("31 (2)").Select
+Sheets("31 (2)").Name = "Summary"
+Range("CK18").Select
+Selection.Copy
+Range("A1:BH1000").Select
+ActiveSheet.Paste
+Application.CutCopyMode = False
+   
+For k = 1 To 31
+
+Sheets(k).Select
+Range("BL3:CJ13").Select
+Selection.Copy
+
+Sheets("Summary").Select
+Cells(2 + (k - 1) * 13, 2).Select
+Selection.PasteSpecial Paste:=xlPasteValues, Operation:=xlNone, SkipBlanks _
+:=False, Transpose:=False
+Selection.PasteSpecial Paste:=xlPasteFormats, Operation:=xlNone, _
+SkipBlanks:=False, Transpose:=False
+
+
+Next k
+
+Sheets("1").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("2").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("3").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("4").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("5").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("6").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("7").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("8").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("9").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("10").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("11").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("12").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("13").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("14").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("15").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("16").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("17").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("18").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("19").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("20").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("21").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("22").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("23").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("24").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("25").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("26").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("27").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("28").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("29").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("30").Select
+ActiveWindow.SelectedSheets.Delete
+Sheets("31").Select
+ActiveWindow.SelectedSheets.Delete
+
+End Sub
+
