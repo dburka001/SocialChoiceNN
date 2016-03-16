@@ -10,6 +10,7 @@
   - Microsoft Office Excel 2007 or newer with macros enabled
 ### Configuration
   - Set the path of your Python executable (pythonw.exe) in the pythonpath.config file (default is the default install path of Python)
+
 ### How to use
   - TODO
 
