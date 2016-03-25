@@ -1,4 +1,4 @@
-# SocialChoiceNN
+# SocialChoiceNeuralNetwork
 ## Contents
   - NNVotingController program for controlling Neural Networks for social choices
   - Former outputs used for analysis
