@@ -15,3 +15,19 @@ c:\Users\Dburka\EGYETEM\Corvinus\Gazdaságinformatikus\PhD\1. félév\Neurális 
 c:\Users\Dburka\EGYETEM\Corvinus\Gazdaságinformatikus\PhD\1. félév\Neurális hálók\Közösségi döntések\NNVotingController\NNVotingController\obj\Debug\NNVotingController._05GenerateParetoInput.resources
 c:\Users\Dburka\EGYETEM\Corvinus\Gazdaságinformatikus\PhD\1. félév\Neurális hálók\Közösségi döntések\NNVotingController\NNVotingController\obj\Debug\NNVotingController._06ResultsXLS.resources
 c:\Users\Dburka\EGYETEM\Corvinus\Gazdaságinformatikus\PhD\1. félév\Neurális hálók\Közösségi döntések\NNVotingController\NNVotingController\obj\Debug\NNVotingController.csproj.ResolveComReference.cache
+c:\Users\Dburka\EGYETEM\Corvinus\Gazdaságinformatikus\PhD\1. félév\Neurális hálók\GitRepo\NNVotingController\NNVotingController\bin\Debug\NNVotingController.exe.config
+c:\Users\Dburka\EGYETEM\Corvinus\Gazdaságinformatikus\PhD\1. félév\Neurális hálók\GitRepo\NNVotingController\NNVotingController\obj\Debug\NNVotingController.csproj.ResolveComReference.cache
+c:\Users\Dburka\EGYETEM\Corvinus\Gazdaságinformatikus\PhD\1. félév\Neurális hálók\GitRepo\NNVotingController\NNVotingController\obj\Debug\NNVotingController.exe
+c:\Users\Dburka\EGYETEM\Corvinus\Gazdaságinformatikus\PhD\1. félév\Neurális hálók\GitRepo\NNVotingController\NNVotingController\obj\Debug\NNVotingController.pdb
+c:\Users\Dburka\EGYETEM\Corvinus\Gazdaságinformatikus\PhD\1. félév\Neurális hálók\GitRepo\NNVotingController\NNVotingController\bin\Debug\NNVotingController.exe
+c:\Users\Dburka\EGYETEM\Corvinus\Gazdaságinformatikus\PhD\1. félév\Neurális hálók\GitRepo\NNVotingController\NNVotingController\bin\Debug\NNVotingController.pdb
+c:\Users\Dburka\EGYETEM\Corvinus\Gazdaságinformatikus\PhD\1. félév\Neurális hálók\GitRepo\NNVotingController\NNVotingController\obj\Debug\NNVotingController.csprojResolveAssemblyReference.cache
+c:\Users\Dburka\EGYETEM\Corvinus\Gazdaságinformatikus\PhD\1. félév\Neurális hálók\GitRepo\NNVotingController\NNVotingController\obj\Debug\NNVotingController._01TrainNeuralNetwork.resources
+c:\Users\Dburka\EGYETEM\Corvinus\Gazdaságinformatikus\PhD\1. félév\Neurális hálók\GitRepo\NNVotingController\NNVotingController\obj\Debug\NNVotingController._02UseNeuralNetwork.resources
+c:\Users\Dburka\EGYETEM\Corvinus\Gazdaságinformatikus\PhD\1. félév\Neurális hálók\GitRepo\NNVotingController\NNVotingController\obj\Debug\NNVotingController._03GenerateMainInput.resources
+c:\Users\Dburka\EGYETEM\Corvinus\Gazdaságinformatikus\PhD\1. félév\Neurális hálók\GitRepo\NNVotingController\NNVotingController\obj\Debug\NNVotingController._04GenerateUnanimityInput.resources
+c:\Users\Dburka\EGYETEM\Corvinus\Gazdaságinformatikus\PhD\1. félév\Neurális hálók\GitRepo\NNVotingController\NNVotingController\obj\Debug\NNVotingController._05GenerateParetoInput.resources
+c:\Users\Dburka\EGYETEM\Corvinus\Gazdaságinformatikus\PhD\1. félév\Neurális hálók\GitRepo\NNVotingController\NNVotingController\obj\Debug\NNVotingController._06ResultsXLS.resources
+c:\Users\Dburka\EGYETEM\Corvinus\Gazdaságinformatikus\PhD\1. félév\Neurális hálók\GitRepo\NNVotingController\NNVotingController\obj\Debug\NNVotingController.Form1.resources
+c:\Users\Dburka\EGYETEM\Corvinus\Gazdaságinformatikus\PhD\1. félév\Neurális hálók\GitRepo\NNVotingController\NNVotingController\obj\Debug\NNVotingController.Properties.Resources.resources
+c:\Users\Dburka\EGYETEM\Corvinus\Gazdaságinformatikus\PhD\1. félév\Neurális hálók\GitRepo\NNVotingController\NNVotingController\obj\Debug\NNVotingController.csproj.GenerateResource.Cache

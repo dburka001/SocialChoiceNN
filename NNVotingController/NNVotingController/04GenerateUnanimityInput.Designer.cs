@@ -36,6 +36,7 @@
             this.rdbNormal = new System.Windows.Forms.RadioButton();
             this.lblCoding = new System.Windows.Forms.Label();
             this.panelCoding = new System.Windows.Forms.Panel();
+            this.rdbSum = new System.Windows.Forms.RadioButton();
             this.rdbBinary = new System.Windows.Forms.RadioButton();
             this.lblType = new System.Windows.Forms.Label();
             this.panelType = new System.Windows.Forms.Panel();
@@ -55,7 +56,6 @@
             this.nudVoters = new System.Windows.Forms.NumericUpDown();
             this.btnStart = new System.Windows.Forms.Button();
             this.chkDiffVoterOrder = new System.Windows.Forms.CheckBox();
-            this.rdbSum = new System.Windows.Forms.RadioButton();
             this.panelCoding.SuspendLayout();
             this.panelType.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudSeed)).BeginInit();
@@ -98,6 +98,7 @@
             // rdbAttila
             // 
             this.rdbAttila.AutoSize = true;
+            this.rdbAttila.Enabled = false;
             this.rdbAttila.Location = new System.Drawing.Point(18, 72);
             this.rdbAttila.Name = "rdbAttila";
             this.rdbAttila.Size = new System.Drawing.Size(48, 17);
@@ -109,6 +110,7 @@
             // rdbBorda
             // 
             this.rdbBorda.AutoSize = true;
+            this.rdbBorda.Enabled = false;
             this.rdbBorda.Location = new System.Drawing.Point(18, 48);
             this.rdbBorda.Name = "rdbBorda";
             this.rdbBorda.Size = new System.Drawing.Size(53, 17);
@@ -120,6 +122,7 @@
             // rdbNormal
             // 
             this.rdbNormal.AutoSize = true;
+            this.rdbNormal.Enabled = false;
             this.rdbNormal.Location = new System.Drawing.Point(18, 25);
             this.rdbNormal.Name = "rdbNormal";
             this.rdbNormal.Size = new System.Drawing.Size(58, 17);
@@ -150,6 +153,16 @@
             this.panelCoding.Name = "panelCoding";
             this.panelCoding.Size = new System.Drawing.Size(130, 157);
             this.panelCoding.TabIndex = 38;
+            // 
+            // rdbSum
+            // 
+            this.rdbSum.AutoSize = true;
+            this.rdbSum.Location = new System.Drawing.Point(18, 118);
+            this.rdbSum.Name = "rdbSum";
+            this.rdbSum.Size = new System.Drawing.Size(82, 17);
+            this.rdbSum.TabIndex = 44;
+            this.rdbSum.Text = "Summarized";
+            this.rdbSum.UseVisualStyleBackColor = true;
             // 
             // rdbBinary
             // 
@@ -366,16 +379,6 @@
             this.chkDiffVoterOrder.Text = "Allow different ordering of voters";
             this.chkDiffVoterOrder.UseVisualStyleBackColor = true;
             this.chkDiffVoterOrder.CheckedChanged += new System.EventHandler(this.InputValueChanged);
-            // 
-            // rdbSum
-            // 
-            this.rdbSum.AutoSize = true;
-            this.rdbSum.Location = new System.Drawing.Point(18, 118);
-            this.rdbSum.Name = "rdbSum";
-            this.rdbSum.Size = new System.Drawing.Size(82, 17);
-            this.rdbSum.TabIndex = 44;
-            this.rdbSum.Text = "Summarized";
-            this.rdbSum.UseVisualStyleBackColor = true;
             // 
             // _04GenerateUnanimityInput
             // 
